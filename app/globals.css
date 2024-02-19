@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #c8d4eac7;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.active .nav-indicator {
+  background-color: white;
+  width: 4rem;
+}
+
+.active .nav-text {
+  color: white;
+}
+
+.heading {
+  background: linear-gradient(0deg,#d8ecf8,#98c0ef);
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 2px 20px rgba(174,207,242,0.2);
+}
+
+.experience-card {
+  box-shadow: inset 0 0.5px 1px 0 rgba(199,211,234,.12), inset 0 2px 4px 0 rgba(199,211,234,.05), 0 24px 32px 0 rgba(6,6,14,.7);
+  background: rgba(25, 25, 27, 0.03);
+}
+
+.experience-card:hover {
+  box-shadow: inset 0px 0.5px 2px 2px rgba(199,211,234,.12), inset 0 2px 4px 0 rgba(199,211,234,.05), 0 24px 32px 0 rgba(6,6,14,.7);
+}
+
+.pill {
+  filter: drop-shadow(0 0 1px #98c0ef);
+  color: #98c0ef;
+  border: 1px solid rgba(113, 129, 250, 0.2);
+}
