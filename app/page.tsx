@@ -1,5 +1,6 @@
 import { fetchArticles } from "@/api/dev-to";
 import Nav from "@/components/nav";
+import Sources from "@/components/sources";
 import Timeline from "@/components/timeline";
 import Image from "next/image";
 
@@ -101,14 +102,20 @@ export default async function Home() {
                 ))}
               </div>
             </section>
-            <section className="h-screen py-24" id="sources">
-              <h1 className="font-bold mb-4 heading">Sources</h1>
-              <p>
-                A lot of times folks ask me where I learn stuff from. Finally I
-                will have something to give them. This is just a list of people,
-                blogs, newsletters and podcasts I follow to keep up with
-                everything.
-              </p>
+            <section
+              className="mb-16 scroll-mt-16 flex flex-col gap-y-8 lg:scroll-mt-24"
+              id="sources"
+            >
+              <div>
+                <h1 className="font-bold mb-4 heading">Sources</h1>
+                <p>
+                  A lot of times folks ask me where I learn stuff from or where do I get my information. Finally
+                  I will have something to give them. This is just a list of
+                  people, blogs, newsletters and podcasts I follow to keep up
+                  with everything.
+                </p>
+              </div>
+              <Sources />
             </section>
           </main>
         </div>
