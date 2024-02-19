@@ -96,7 +96,7 @@ const Timeline = () => {
     <ol>
       {data.map((item) => (
         <li key={item.date} className="mb-4">
-          <div className="group relative grid transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 p-8 rounded-lg experience-card cursor-pointer">
+          <div className="group relative grid transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 p-8 rounded-lg experience-card cursor-pointer hover:-translate-y-1">
             <header
               className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
               aria-label="2018 to Present"
