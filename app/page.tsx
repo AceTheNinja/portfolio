@@ -89,13 +89,13 @@ export default async function Home() {
                 {articles.map((article) => (
                   <div
                     key={article.id}
-                    className="group relative transition-all sm:gap-8 md:gap-4 flex p-8 rounded-lg experience-card cursor-pointer hover:-translate-y-1"
+                    className="group relative transition-all sm:gap-8 md:gap-4 flex flex-col md:flex-row gap-y-4 p-8 rounded-lg experience-card cursor-pointer hover:-translate-y-1"
                   >
-                    <Image
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
                       src={article.social_image}
-                      width={150}
-                      height={100}
                       alt={article.title}
+                      className="rounded-lg md:w-36"
                     />
                     <h2 className="font-semibold">{article.title}</h2>
                   </div>
