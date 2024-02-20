@@ -1,8 +1,8 @@
 import { fetchArticles } from "@/api/dev-to";
 import Nav from "@/components/nav";
+import Socials from "@/components/socials";
 import Sources from "@/components/sources";
 import Timeline from "@/components/timeline";
-import Image from "next/image";
 
 export default async function Home() {
   const articles = await fetchArticles();
@@ -24,9 +24,12 @@ export default async function Home() {
               </p>
               <Nav />
             </div>
+            <div className="mt-4 lg:mt-0">
+              <Socials />
+            </div>
           </header>
 
-          <main className="lg:w-1/2 pt-24">
+          <main className="lg:w-1/2 pt-10 lg:pt-24">
             <section className="mb-16 scroll-mt-16 lg:scroll-mt-24" id="about">
               <h1 className="font-bold mb-4 heading">About me</h1>
               <div className="flex flex-col gap-y-4">
@@ -109,10 +112,10 @@ export default async function Home() {
               <div>
                 <h1 className="font-bold mb-4 heading">Sources</h1>
                 <p>
-                  A lot of times folks ask me where I learn stuff from or where do I get my information. Finally
-                  I will have something to give them. This is just a list of
-                  people, blogs, newsletters and podcasts I follow to keep up
-                  with everything.
+                  A lot of times folks ask me where I learn stuff from or where
+                  do I get my information. Finally I will have something to give
+                  them. This is just a list of people, blogs, newsletters and
+                  podcasts I follow to keep up with everything.
                 </p>
               </div>
               <Sources />
