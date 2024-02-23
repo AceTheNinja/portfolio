@@ -64,7 +64,7 @@ export default async function Home() {
               </div>
               <a
                 target="_blank"
-                href="https://docs.google.com/document/d/1A5zaA3tFMceLmTcND9mRuPO0C0as7vJkcCzXipCRmIM/edit?usp=sharing"
+                href="https://docs.google.com/document/d/1qO1Nx_pT4ms6CRwWAaLogYiIX-Fb8ycH/edit?usp=sharing&ouid=102098534918446708147&rtpof=true&sd=true"
                 className="group transition-all hover:text-blue-500 font-semibold border-b border-gray-700 w-min whitespace-nowrap"
               >
                 Resume{" "}

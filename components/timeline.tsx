@@ -1,4 +1,9 @@
-import React from "react";
+import Image from "next/image";
+import Numans from "../public/logos/numans.svg";
+import Niyo from "../public/logos/niyo.svg";
+import OSlash from "../public/logos/oslash.svg";
+import Scapic from "../public/logos/scapic.svg";
+import Cryptorai from "../public/logos/cryptorai.svg";
 
 const data = [
   {
@@ -22,6 +27,9 @@ const data = [
       "React",
       "Next.js",
     ],
+    image: {
+      component: Numans,
+    },
   },
   {
     date: "2021 — 2022",
@@ -31,10 +39,13 @@ const data = [
     url: "https://goniyo.com",
     description: `At Niyo, my responsibilities included overseeing backends that facilitated transactions and bank transfer services, ensuring seamless financial operations. I led the development of integrations for transaction enrichment with M2P, to expand our service capabilities globally. Additionally, I led the implementation of testing workflows in our CI/CD pipelines across all BFFs, to ensure high reliability and performance of our banking solutions.`,
     tech: ["Nest.js", "TypeScript", "Node.js", "MongoDB", "React"],
+    image: {
+      component: Niyo,
+    },
   },
   {
     date: "2019 — 2021",
-    title: "Lead Software Engineer",
+    title: "Software Engineer",
     previousTitles: [],
     company: "OSlash",
     url: "https://oslash.com",
@@ -53,6 +64,9 @@ const data = [
       "AWS",
       "Next.js",
     ],
+    image: {
+      component: OSlash,
+    },
   },
   {
     date: "2019 — 2019",
@@ -71,6 +85,9 @@ const data = [
       "React",
       "AWS",
     ],
+    image: {
+      component: Scapic,
+    },
   },
   {
     date: "2018 — 2019",
@@ -88,6 +105,9 @@ const data = [
       "React",
       "Azure",
     ],
+    image: {
+      component: Cryptorai,
+    },
   },
 ];
 
@@ -98,13 +118,19 @@ const Timeline = () => {
         <li key={item.date} className="mb-4">
           <div className="group relative grid transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 p-8 rounded-lg experience-card cursor-pointer hover:-translate-y-1">
             <header
-              className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-              aria-label="2018 to Present"
+              className="z-10 sm:col-span-2 flex flex-col gap-y-4"
+              aria-label={item.date}
             >
-              {item.date}
+              <Image
+                src={item.image.component}
+                className="opacity-10 group-hover:opacity-50 transition-opacity max-h-10"
+                alt="Numans"
+                width={50}
+              />
             </header>
             <div className="z-10 sm:col-span-6">
               <h3 className="font-medium leading-snug text-slate-200">
+                <div className="text-xs mb-1 font-semibold uppercase tracking-wide text-slate-500">{item.date}</div>
                 <div>
                   <a
                     className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-blue-400 focus-visible:text-blue-400 group/link text-base"
@@ -157,6 +183,7 @@ const Timeline = () => {
                 ))}
               </ul>
             </div>
+            <div className="absolute opacity-10 -right-10 top-10"></div>
           </div>
         </li>
       ))}
