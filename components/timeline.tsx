@@ -118,7 +118,7 @@ const Timeline = () => {
         <li key={item.date} className="mb-4">
           <div className="group relative grid transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 p-8 rounded-lg experience-card cursor-pointer hover:-translate-y-1">
             <header
-              className="z-10 sm:col-span-2 flex flex-col gap-y-4"
+              className="z-10 mb-4 sm:col-span-2 flex flex-col gap-y-4"
               aria-label={item.date}
             >
               <Image
