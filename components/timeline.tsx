@@ -124,7 +124,7 @@ const Timeline = () => {
               <Image
                 src={item.image.component}
                 className="opacity-10 group-hover:opacity-50 transition-opacity max-h-10"
-                alt="Numans"
+                alt={item.company}
                 width={50}
               />
             </header>
