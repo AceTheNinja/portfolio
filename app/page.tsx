@@ -88,11 +88,13 @@ export default async function Home() {
               id="writing"
             >
               <h1 className="font-bold mb-4 heading">Writings on the wall</h1>
-              <div>
+              <div className="flex flex-col gap-y-4">
                 {articles.map((article) => (
-                  <div
+                  <a
                     key={article.id}
-                    className="group relative transition-all sm:gap-8 md:gap-4 flex flex-col md:flex-row gap-y-4 p-8 rounded-lg experience-card cursor-pointer hover:-translate-y-1"
+                    href={article.url}
+                    target="_blank"
+                    className="group relative transition-all sm:gap-8 md:gap-4 flex flex-col md:flex-row p-8 rounded-lg experience-card cursor-pointer hover:-translate-y-1"
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
@@ -101,7 +103,7 @@ export default async function Home() {
                       className="rounded-lg md:w-36"
                     />
                     <h2 className="font-semibold">{article.title}</h2>
-                  </div>
+                  </a>
                 ))}
               </div>
             </section>
