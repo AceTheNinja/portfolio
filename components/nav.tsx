@@ -24,9 +24,8 @@ const Nav = () => {
       <ul className="mt-16 w-max">
         <li>
           <a
-            className={`group flex items-center py-3 ${
-              activeNav === "about" ? "active" : ""
-            }`}
+            className={`group flex items-center py-3 ${activeNav === "about" ? "active" : ""
+              }`}
             href="#about"
           >
             <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
@@ -37,9 +36,8 @@ const Nav = () => {
         </li>
         <li>
           <a
-            className={`group flex items-center py-3 ${
-              activeNav === "experience" ? "active" : ""
-            }`}
+            className={`group flex items-center py-3 ${activeNav === "experience" ? "active" : ""
+              }`}
             href="#experience"
           >
             <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
@@ -50,9 +48,8 @@ const Nav = () => {
         </li>
         <li>
           <a
-            className={`group flex items-center py-3 ${
-              activeNav === "writing" ? "active" : ""
-            }`}
+            className={`group flex items-center py-3 ${activeNav === "writing" ? "active" : ""
+              }`}
             href="#writing"
           >
             <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
@@ -61,11 +58,10 @@ const Nav = () => {
             </span>
           </a>
         </li>
-        <li>
+        {/* <li>
           <a
-            className={`group flex items-center py-3 ${
-              activeNav === "sources" ? "active" : ""
-            }`}
+            className={`group flex items-center py-3 ${activeNav === "sources" ? "active" : ""
+              }`}
             href="#sources"
           >
             <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
@@ -73,7 +69,7 @@ const Nav = () => {
               Sources
             </span>
           </a>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

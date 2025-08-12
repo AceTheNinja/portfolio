@@ -1,7 +1,6 @@
 import { fetchArticles } from "@/api/dev-to";
 import Nav from "@/components/nav";
 import Socials from "@/components/socials";
-import Sources from "@/components/sources";
 import Timeline from "@/components/timeline";
 
 export default async function Home() {
@@ -64,7 +63,7 @@ export default async function Home() {
               </div>
               <a
                 target="_blank"
-                href="https://docs.google.com/document/d/1qO1Nx_pT4ms6CRwWAaLogYiIX-Fb8ycH/edit?usp=sharing&ouid=102098534918446708147&rtpof=true&sd=true"
+                href="https://docs.google.com/document/d/1A5zaA3tFMceLmTcND9mRuPO0C0as7vJkcCzXipCRmIM/edit?usp=sharing"
                 className="group transition-all hover:text-blue-500 font-semibold border-b border-gray-700 w-min whitespace-nowrap"
               >
                 Resume{" "}
@@ -99,7 +98,7 @@ export default async function Home() {
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={article.social_image}
-                      alt={article.title}
+                      alt={article.title.slice(0, 10)}
                       className="rounded-lg md:w-36"
                     />
                     <h2 className="font-semibold">{article.title}</h2>
@@ -107,12 +106,12 @@ export default async function Home() {
                 ))}
               </div>
             </section>
-            <section
+            {/* <section
               className="mb-16 scroll-mt-16 flex flex-col gap-y-8 lg:scroll-mt-24"
               id="sources"
             >
               <div>
-                <h1 className="font-bold mb-4 heading">Sources</h1>
+                <h1 className="font-bold mb-4 heading">Where</h1>
                 <p>
                   A lot of times folks ask me where I learn stuff from or where
                   do I get my information. Finally I will have something to give
@@ -121,7 +120,7 @@ export default async function Home() {
                 </p>
               </div>
               <Sources />
-            </section>
+            </section> */}
           </main>
         </div>
       </div>

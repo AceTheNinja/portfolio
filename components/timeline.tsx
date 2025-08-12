@@ -1,13 +1,30 @@
 import Image from "next/image";
-import Numans from "../public/logos/numans.svg";
+import Bitfinex from "../public/logos/bitfinex.svg";
+import Cryptorai from "../public/logos/cryptorai.svg";
 import Niyo from "../public/logos/niyo.svg";
+import Numans from "../public/logos/numans.svg";
 import OSlash from "../public/logos/oslash.svg";
 import Scapic from "../public/logos/scapic.svg";
-import Cryptorai from "../public/logos/cryptorai.svg";
 
 const data = [
   {
-    date: "Present",
+    date: "2024-Present",
+    title: "Senior Software Engineer",
+    previousTitles: [],
+    company: "Bitfinex",
+    url: "https://www.bitfinex.com/",
+    description: `At Bitfinex, I worked on third party integrations, responsible for handling the execution of wire transfers across the platform.`,
+    tech: [
+      "JavaScript",
+      "Node.js",
+      "MySQL"
+    ],
+    image: {
+      component: Bitfinex,
+    },
+  },
+  {
+    date: "2022-2024",
     title: "Co-founder & CTO",
     previousTitles: [],
     company: "Numans",
