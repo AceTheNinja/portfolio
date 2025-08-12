@@ -38,15 +38,15 @@ export default async function Home() {
                   enough to find people near me who wanted to do the same.
                   Fast-forward to today and I{"'"}m still chasing after the
                   coolest of ideas. I{"'"}ve worked across various domains viz.
-                  AR/VR, Productivity, Fin-tech and HR Tech.
+                  AR/VR, Productivity, Fin-tech and now crypto at Bitfinex.
                 </p>
                 <p>
-                  Most recently I{"'"}ve been the Co-founder of Numans, an HR
-                  operations management tool for the next generation of
-                  knowledge workers.
+                  I enjoy solving hard-problems (which is convenient because AI
+                  has solved all the smaller easier problems) and focus on
+                  building things that scale the business and not just tech.
                 </p>
                 <p>
-                  When I{"'"}m not in front a screen, I{"'"}m usually out
+                  PS: When I{"'"}m not in front a screen, I{"'"}m usually out
                   playing with my dogs, learning some obscure facts, trying to
                   figure out how to reduce my carbon footprint or simply
                   listening to podcasts.
